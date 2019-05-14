@@ -7,25 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EFF002E21569C1100DD3DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF002D21569C1100DD3DB6 /* AppDelegate.m */; };
-		6EFF003121569C1100DD3DB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF003021569C1100DD3DB6 /* ViewController.m */; };
-		6EFF003421569C1100DD3DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF003221569C1100DD3DB6 /* Main.storyboard */; };
+		53349125F03338AAB48822B6 /* libPods-PalmTang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC0BF263D0DB1F265122A6E /* libPods-PalmTang.a */; };
+		55005CDD218A8FF400AAE33A /* FDMRegisterLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55005CDC218A8FF400AAE33A /* FDMRegisterLoginController.m */; };
+		55005CE5218AAC4200AAE33A /* FDMRegisterLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55005CE4218AAC4200AAE33A /* FDMRegisterLoginView.m */; };
+		55005CE7218AAC5600AAE33A /* FDMRegisterLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55005CE6218AAC5600AAE33A /* FDMRegisterLoginView.xib */; };
+		550B98442191441800489123 /* FDMModifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B98422191441800489123 /* FDMModifyController.m */; };
+		550B98472191447900489123 /* FDMModifyController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550B98462191447900489123 /* FDMModifyController.storyboard */; };
+		55150E452192831400B6D627 /* FDMSexSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55150E442192831400B6D627 /* FDMSexSelectionView.m */; };
+		55150E472192832C00B6D627 /* FDMSexSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55150E462192832C00B6D627 /* FDMSexSelectionView.xib */; };
+		5520E1BD218829F5008367EC /* FDMTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5520E1BC218829F5008367EC /* FDMTableHeaderView.m */; };
+		5520E1BF21882AD9008367EC /* FDMTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5520E1BE21882AD9008367EC /* FDMTableHeaderView.xib */; };
+		5520E1C321883DA1008367EC /* FDMMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5520E1C121883DA1008367EC /* FDMMeTableViewCell.m */; };
+		5520E1C421883DA1008367EC /* FDMMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5520E1C221883DA1008367EC /* FDMMeTableViewCell.xib */; };
+		5520E1C6218840CD008367EC /* FDMList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5520E1C5218840CD008367EC /* FDMList.plist */; };
+		5520E1C921884979008367EC /* FDMMeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5520E1C821884979008367EC /* FDMMeListModel.m */; };
+		552E24B5218BEEB700B5D0E0 /* FDMUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E24B4218BEEB700B5D0E0 /* FDMUserModel.m */; };
+		552E24B8218C174A00B5D0E0 /* FDMTableHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E24B7218C174A00B5D0E0 /* FDMTableHeaderModel.m */; };
+		552E24BB218C245200B5D0E0 /* FDMCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E24BA218C245200B5D0E0 /* FDMCollectionModel.m */; };
+		55A9545F218C2F7200C48875 /* FDMFocusWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9545E218C2F7200C48875 /* FDMFocusWebController.m */; };
+		55AF3B0A2194394D0054CBEE /* FDMSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AF3B092194394D0054CBEE /* FDMSettingController.m */; };
+		55AF3B0C219439660054CBEE /* FDMSettingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55AF3B0B219439660054CBEE /* FDMSettingController.storyboard */; };
+		55B1128F2189809A00C6105B /* NSDictionary+FDMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B1128D2189809A00C6105B /* NSDictionary+FDMLog.m */; };
+		55B1129E2189994300C6105B /* FDMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B1129C2189994300C6105B /* FDMCollectionViewCell.m */; };
+		55B1129F2189994300C6105B /* FDMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B1129D2189994300C6105B /* FDMCollectionViewCell.xib */; };
+		55F350862197E2270098DA31 /* FDMVoiceViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F350842197E2270098DA31 /* FDMVoiceViewCell.m */; };
+		55F350872197E2270098DA31 /* FDMVoiceViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F350852197E2270098DA31 /* FDMVoiceViewCell.xib */; };
+		55F3508A21981F080098DA31 /* FDMArticleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F3508921981F080098DA31 /* FDMArticleController.m */; };
+		55F55CBD21957245001F529C /* FDMListPicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F55CBC21957245001F529C /* FDMListPicModel.m */; };
+		6EF6679F2157A1100014C261 /* FDMMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6679E2157A1100014C261 /* FDMMeController.m */; };
+		6EF667AD2157AD7D0014C261 /* FDMFocusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667AC2157AD7D0014C261 /* FDMFocusController.m */; };
+		6EF667B02157AD930014C261 /* FDMVoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667AF2157AD930014C261 /* FDMVoiceController.m */; };
+		6EF667C12157B5510014C261 /* DCPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667B42157B5510014C261 /* DCPagerController.m */; };
+		6EF667C22157B5510014C261 /* UIView+DCPagerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667B82157B5510014C261 /* UIView+DCPagerFrame.m */; };
+		6EF667C32157B5510014C261 /* DCPagerConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667BB2157B5510014C261 /* DCPagerConsts.m */; };
+		6EF667C42157B5510014C261 /* DCPagerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667C02157B5510014C261 /* DCPagerProgressView.m */; };
+		6EF667C72157E00C0014C261 /* FDMHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667C62157E00C0014C261 /* FDMHomePageController.m */; };
+		6EF667CA2157E9E80014C261 /* FDMInterflowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667C92157E9E80014C261 /* FDMInterflowController.m */; };
+		6EF667CD2157EA040014C261 /* FDMConfessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667CC2157EA040014C261 /* FDMConfessionController.m */; };
+		6EF667D02157EA1C0014C261 /* FDMMarketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF667CF2157EA1C0014C261 /* FDMMarketController.m */; };
 		6EFF003621569C1100DD3DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF003521569C1100DD3DB6 /* Assets.xcassets */; };
 		6EFF003921569C1100DD3DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF003721569C1100DD3DB6 /* LaunchScreen.storyboard */; };
-		6EFF003C21569C1100DD3DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF003B21569C1100DD3DB6 /* main.m */; };
+		6EFF006321569F6A00DD3DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF005D21569F6A00DD3DB6 /* AppDelegate.m */; };
+		6EFF006421569F6A00DD3DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF005E21569F6A00DD3DB6 /* main.m */; };
+		6EFF00672156A12200DD3DB6 /* FDMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF00662156A12200DD3DB6 /* FDMTabBarController.m */; };
+		6EFF006A2156A18B00DD3DB6 /* FDMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF00692156A18B00DD3DB6 /* FDMNavigationController.m */; };
+		6EFF00702156A6EA00DD3DB6 /* FDMCommunityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF006F2156A6EA00DD3DB6 /* FDMCommunityController.m */; };
+		6EFF00732156A6FD00DD3DB6 /* FDMFavourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF00722156A6FD00DD3DB6 /* FDMFavourController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55005CDB218A8FF400AAE33A /* FDMRegisterLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMRegisterLoginController.h; sourceTree = "<group>"; };
+		55005CDC218A8FF400AAE33A /* FDMRegisterLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMRegisterLoginController.m; sourceTree = "<group>"; };
+		55005CE3218AAC4200AAE33A /* FDMRegisterLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMRegisterLoginView.h; sourceTree = "<group>"; };
+		55005CE4218AAC4200AAE33A /* FDMRegisterLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMRegisterLoginView.m; sourceTree = "<group>"; };
+		55005CE6218AAC5600AAE33A /* FDMRegisterLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDMRegisterLoginView.xib; sourceTree = "<group>"; };
+		550B98412191441800489123 /* FDMModifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMModifyController.h; sourceTree = "<group>"; };
+		550B98422191441800489123 /* FDMModifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMModifyController.m; sourceTree = "<group>"; };
+		550B98462191447900489123 /* FDMModifyController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FDMModifyController.storyboard; sourceTree = "<group>"; };
+		55150E432192831400B6D627 /* FDMSexSelectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMSexSelectionView.h; sourceTree = "<group>"; };
+		55150E442192831400B6D627 /* FDMSexSelectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMSexSelectionView.m; sourceTree = "<group>"; };
+		55150E462192832C00B6D627 /* FDMSexSelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDMSexSelectionView.xib; sourceTree = "<group>"; };
+		5520E1BB218829F5008367EC /* FDMTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMTableHeaderView.h; sourceTree = "<group>"; };
+		5520E1BC218829F5008367EC /* FDMTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMTableHeaderView.m; sourceTree = "<group>"; };
+		5520E1BE21882AD9008367EC /* FDMTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDMTableHeaderView.xib; sourceTree = "<group>"; };
+		5520E1C021883DA1008367EC /* FDMMeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMMeTableViewCell.h; sourceTree = "<group>"; };
+		5520E1C121883DA1008367EC /* FDMMeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMMeTableViewCell.m; sourceTree = "<group>"; };
+		5520E1C221883DA1008367EC /* FDMMeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDMMeTableViewCell.xib; sourceTree = "<group>"; };
+		5520E1C5218840CD008367EC /* FDMList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FDMList.plist; sourceTree = "<group>"; };
+		5520E1C721884979008367EC /* FDMMeListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMMeListModel.h; sourceTree = "<group>"; };
+		5520E1C821884979008367EC /* FDMMeListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMMeListModel.m; sourceTree = "<group>"; };
+		552E24B3218BEEB700B5D0E0 /* FDMUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMUserModel.h; sourceTree = "<group>"; };
+		552E24B4218BEEB700B5D0E0 /* FDMUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMUserModel.m; sourceTree = "<group>"; };
+		552E24B6218C174A00B5D0E0 /* FDMTableHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMTableHeaderModel.h; sourceTree = "<group>"; };
+		552E24B7218C174A00B5D0E0 /* FDMTableHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMTableHeaderModel.m; sourceTree = "<group>"; };
+		552E24B9218C245200B5D0E0 /* FDMCollectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMCollectionModel.h; sourceTree = "<group>"; };
+		552E24BA218C245200B5D0E0 /* FDMCollectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMCollectionModel.m; sourceTree = "<group>"; };
+		55A9545D218C2F7200C48875 /* FDMFocusWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMFocusWebController.h; sourceTree = "<group>"; };
+		55A9545E218C2F7200C48875 /* FDMFocusWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMFocusWebController.m; sourceTree = "<group>"; };
+		55AF3B082194394D0054CBEE /* FDMSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMSettingController.h; sourceTree = "<group>"; };
+		55AF3B092194394D0054CBEE /* FDMSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMSettingController.m; sourceTree = "<group>"; };
+		55AF3B0B219439660054CBEE /* FDMSettingController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FDMSettingController.storyboard; sourceTree = "<group>"; };
+		55B1128D2189809A00C6105B /* NSDictionary+FDMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FDMLog.m"; sourceTree = "<group>"; };
+		55B1128E2189809A00C6105B /* NSDictionary+FDMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FDMLog.h"; sourceTree = "<group>"; };
+		55B1129B2189994300C6105B /* FDMCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMCollectionViewCell.h; sourceTree = "<group>"; };
+		55B1129C2189994300C6105B /* FDMCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMCollectionViewCell.m; sourceTree = "<group>"; };
+		55B1129D2189994300C6105B /* FDMCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDMCollectionViewCell.xib; sourceTree = "<group>"; };
+		55F350832197E2270098DA31 /* FDMVoiceViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMVoiceViewCell.h; sourceTree = "<group>"; };
+		55F350842197E2270098DA31 /* FDMVoiceViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMVoiceViewCell.m; sourceTree = "<group>"; };
+		55F350852197E2270098DA31 /* FDMVoiceViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDMVoiceViewCell.xib; sourceTree = "<group>"; };
+		55F3508821981F080098DA31 /* FDMArticleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMArticleController.h; sourceTree = "<group>"; };
+		55F3508921981F080098DA31 /* FDMArticleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMArticleController.m; sourceTree = "<group>"; };
+		55F55CBB21957245001F529C /* FDMListPicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMListPicModel.h; sourceTree = "<group>"; };
+		55F55CBC21957245001F529C /* FDMListPicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMListPicModel.m; sourceTree = "<group>"; };
+		6EF6679D2157A1100014C261 /* FDMMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMMeController.h; sourceTree = "<group>"; };
+		6EF6679E2157A1100014C261 /* FDMMeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMMeController.m; sourceTree = "<group>"; };
+		6EF667AB2157AD7D0014C261 /* FDMFocusController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMFocusController.h; sourceTree = "<group>"; };
+		6EF667AC2157AD7D0014C261 /* FDMFocusController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMFocusController.m; sourceTree = "<group>"; };
+		6EF667AE2157AD930014C261 /* FDMVoiceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMVoiceController.h; sourceTree = "<group>"; };
+		6EF667AF2157AD930014C261 /* FDMVoiceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMVoiceController.m; sourceTree = "<group>"; };
+		6EF667B32157B5510014C261 /* DCPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerController.h; sourceTree = "<group>"; };
+		6EF667B42157B5510014C261 /* DCPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerController.m; sourceTree = "<group>"; };
+		6EF667B72157B5510014C261 /* UIView+DCPagerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCPagerFrame.h"; sourceTree = "<group>"; };
+		6EF667B82157B5510014C261 /* UIView+DCPagerFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCPagerFrame.m"; sourceTree = "<group>"; };
+		6EF667BA2157B5510014C261 /* DCPagerConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerConsts.h; sourceTree = "<group>"; };
+		6EF667BB2157B5510014C261 /* DCPagerConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerConsts.m; sourceTree = "<group>"; };
+		6EF667BD2157B5510014C261 /* DCPagerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerMacros.h; sourceTree = "<group>"; };
+		6EF667BF2157B5510014C261 /* DCPagerProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPagerProgressView.h; sourceTree = "<group>"; };
+		6EF667C02157B5510014C261 /* DCPagerProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPagerProgressView.m; sourceTree = "<group>"; };
+		6EF667C52157E00C0014C261 /* FDMHomePageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMHomePageController.h; sourceTree = "<group>"; };
+		6EF667C62157E00C0014C261 /* FDMHomePageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMHomePageController.m; sourceTree = "<group>"; };
+		6EF667C82157E9E80014C261 /* FDMInterflowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMInterflowController.h; sourceTree = "<group>"; };
+		6EF667C92157E9E80014C261 /* FDMInterflowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMInterflowController.m; sourceTree = "<group>"; };
+		6EF667CB2157EA040014C261 /* FDMConfessionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMConfessionController.h; sourceTree = "<group>"; };
+		6EF667CC2157EA040014C261 /* FDMConfessionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMConfessionController.m; sourceTree = "<group>"; };
+		6EF667CE2157EA1C0014C261 /* FDMMarketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMMarketController.h; sourceTree = "<group>"; };
+		6EF667CF2157EA1C0014C261 /* FDMMarketController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMMarketController.m; sourceTree = "<group>"; };
+		6EF667D12157F29F0014C261 /* PalmTang.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalmTang.pch; sourceTree = "<group>"; };
 		6EFF002921569C1100DD3DB6 /* PalmTang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalmTang.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EFF002C21569C1100DD3DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6EFF002D21569C1100DD3DB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6EFF002F21569C1100DD3DB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6EFF003021569C1100DD3DB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6EFF003321569C1100DD3DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EFF003521569C1100DD3DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EFF003821569C1100DD3DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EFF003A21569C1100DD3DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EFF003B21569C1100DD3DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EFF005C21569F6A00DD3DB6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6EFF005D21569F6A00DD3DB6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6EFF005E21569F6A00DD3DB6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EFF00652156A12200DD3DB6 /* FDMTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMTabBarController.h; sourceTree = "<group>"; };
+		6EFF00662156A12200DD3DB6 /* FDMTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMTabBarController.m; sourceTree = "<group>"; };
+		6EFF00682156A18B00DD3DB6 /* FDMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMNavigationController.h; sourceTree = "<group>"; };
+		6EFF00692156A18B00DD3DB6 /* FDMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMNavigationController.m; sourceTree = "<group>"; };
+		6EFF006E2156A6EA00DD3DB6 /* FDMCommunityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMCommunityController.h; sourceTree = "<group>"; };
+		6EFF006F2156A6EA00DD3DB6 /* FDMCommunityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMCommunityController.m; sourceTree = "<group>"; };
+		6EFF00712156A6FD00DD3DB6 /* FDMFavourController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMFavourController.h; sourceTree = "<group>"; };
+		6EFF00722156A6FD00DD3DB6 /* FDMFavourController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMFavourController.m; sourceTree = "<group>"; };
+		8DC0BF263D0DB1F265122A6E /* libPods-PalmTang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PalmTang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02B2B01017D6E793E7697A6 /* Pods-PalmTang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalmTang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PalmTang/Pods-PalmTang.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D22A91FB4DBA64BFCB4AE5 /* Pods-PalmTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalmTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-PalmTang/Pods-PalmTang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +148,163 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53349125F03338AAB48822B6 /* libPods-PalmTang.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55B1128621897D5C00C6105B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				55B1128E2189809A00C6105B /* NSDictionary+FDMLog.h */,
+				55B1128D2189809A00C6105B /* NSDictionary+FDMLog.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6EF667992157A0E50014C261 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				6EF6679A2157A0E50014C261 /* Controller */,
+				6EF6679B2157A0E50014C261 /* Model */,
+				6EF6679C2157A0E50014C261 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		6EF6679A2157A0E50014C261 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EF6679D2157A1100014C261 /* FDMMeController.h */,
+				6EF6679E2157A1100014C261 /* FDMMeController.m */,
+				55AF3B082194394D0054CBEE /* FDMSettingController.h */,
+				55AF3B092194394D0054CBEE /* FDMSettingController.m */,
+				55AF3B0B219439660054CBEE /* FDMSettingController.storyboard */,
+				550B98412191441800489123 /* FDMModifyController.h */,
+				550B98422191441800489123 /* FDMModifyController.m */,
+				550B98462191447900489123 /* FDMModifyController.storyboard */,
+				55005CDB218A8FF400AAE33A /* FDMRegisterLoginController.h */,
+				55005CDC218A8FF400AAE33A /* FDMRegisterLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EF6679B2157A0E50014C261 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5520E1C5218840CD008367EC /* FDMList.plist */,
+				5520E1C721884979008367EC /* FDMMeListModel.h */,
+				5520E1C821884979008367EC /* FDMMeListModel.m */,
+				552E24B3218BEEB700B5D0E0 /* FDMUserModel.h */,
+				552E24B4218BEEB700B5D0E0 /* FDMUserModel.m */,
+				552E24B6218C174A00B5D0E0 /* FDMTableHeaderModel.h */,
+				552E24B7218C174A00B5D0E0 /* FDMTableHeaderModel.m */,
+				55F55CBB21957245001F529C /* FDMListPicModel.h */,
+				55F55CBC21957245001F529C /* FDMListPicModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EF6679C2157A0E50014C261 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5520E1BB218829F5008367EC /* FDMTableHeaderView.h */,
+				5520E1BC218829F5008367EC /* FDMTableHeaderView.m */,
+				5520E1BE21882AD9008367EC /* FDMTableHeaderView.xib */,
+				5520E1C021883DA1008367EC /* FDMMeTableViewCell.h */,
+				5520E1C121883DA1008367EC /* FDMMeTableViewCell.m */,
+				5520E1C221883DA1008367EC /* FDMMeTableViewCell.xib */,
+				55005CE3218AAC4200AAE33A /* FDMRegisterLoginView.h */,
+				55005CE4218AAC4200AAE33A /* FDMRegisterLoginView.m */,
+				55005CE6218AAC5600AAE33A /* FDMRegisterLoginView.xib */,
+				55150E432192831400B6D627 /* FDMSexSelectionView.h */,
+				55150E442192831400B6D627 /* FDMSexSelectionView.m */,
+				55150E462192832C00B6D627 /* FDMSexSelectionView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EF667A02157AAA40014C261 /* Farme(框架) */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667B12157B5510014C261 /* CDDPagerController */,
+			);
+			path = "Farme(框架)";
+			sourceTree = "<group>";
+		};
+		6EF667B12157B5510014C261 /* CDDPagerController */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667B22157B5510014C261 /* Controller */,
+				6EF667B52157B5510014C261 /* Expand(扩展) */,
+				6EF667BE2157B5510014C261 /* View */,
+			);
+			path = CDDPagerController;
+			sourceTree = "<group>";
+		};
+		6EF667B22157B5510014C261 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667B32157B5510014C261 /* DCPagerController.h */,
+				6EF667B42157B5510014C261 /* DCPagerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EF667B52157B5510014C261 /* Expand(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667B62157B5510014C261 /* Category(分类) */,
+				6EF667B92157B5510014C261 /* Const(常量) */,
+				6EF667BC2157B5510014C261 /* Macros(宏) */,
+			);
+			path = "Expand(扩展)";
+			sourceTree = "<group>";
+		};
+		6EF667B62157B5510014C261 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667B72157B5510014C261 /* UIView+DCPagerFrame.h */,
+				6EF667B82157B5510014C261 /* UIView+DCPagerFrame.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		6EF667B92157B5510014C261 /* Const(常量) */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667BA2157B5510014C261 /* DCPagerConsts.h */,
+				6EF667BB2157B5510014C261 /* DCPagerConsts.m */,
+			);
+			path = "Const(常量)";
+			sourceTree = "<group>";
+		};
+		6EF667BC2157B5510014C261 /* Macros(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667BD2157B5510014C261 /* DCPagerMacros.h */,
+			);
+			path = "Macros(宏)";
+			sourceTree = "<group>";
+		};
+		6EF667BE2157B5510014C261 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667BF2157B5510014C261 /* DCPagerProgressView.h */,
+				6EF667C02157B5510014C261 /* DCPagerProgressView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6EFF002021569C1100DD3DB6 = {
 			isa = PBXGroup;
 			children = (
 				6EFF002B21569C1100DD3DB6 /* PalmTang */,
 				6EFF002A21569C1100DD3DB6 /* Products */,
+				98927D458FCA0BE929FC61B1 /* Pods */,
+				9AB7C1E7D0086ECDC07CF405 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +319,211 @@
 		6EFF002B21569C1100DD3DB6 /* PalmTang */ = {
 			isa = PBXGroup;
 			children = (
-				6EFF002C21569C1100DD3DB6 /* AppDelegate.h */,
-				6EFF002D21569C1100DD3DB6 /* AppDelegate.m */,
-				6EFF002F21569C1100DD3DB6 /* ViewController.h */,
-				6EFF003021569C1100DD3DB6 /* ViewController.m */,
-				6EFF003221569C1100DD3DB6 /* Main.storyboard */,
+				6EFF004A21569F6A00DD3DB6 /* Classes */,
 				6EFF003521569C1100DD3DB6 /* Assets.xcassets */,
 				6EFF003721569C1100DD3DB6 /* LaunchScreen.storyboard */,
 				6EFF003A21569C1100DD3DB6 /* Info.plist */,
-				6EFF003B21569C1100DD3DB6 /* main.m */,
 			);
 			path = PalmTang;
+			sourceTree = "<group>";
+		};
+		6EFF004A21569F6A00DD3DB6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF005721569F6A00DD3DB6 /* Main(主要) */,
+				6EFF005321569F6A00DD3DB6 /* HomePage(首页) */,
+				6EFF004B21569F6A00DD3DB6 /* Community(社区) */,
+				6EFF004F21569F6A00DD3DB6 /* Favour(帮帮) */,
+				6EF667992157A0E50014C261 /* Me(我) */,
+				6EFF005B21569F6A00DD3DB6 /* Other(其它) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6EFF004B21569F6A00DD3DB6 /* Community(社区) */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF004C21569F6A00DD3DB6 /* Controller */,
+				6EFF004D21569F6A00DD3DB6 /* Model */,
+				6EFF004E21569F6A00DD3DB6 /* View */,
+			);
+			path = "Community(社区)";
+			sourceTree = "<group>";
+		};
+		6EFF004C21569F6A00DD3DB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF006E2156A6EA00DD3DB6 /* FDMCommunityController.h */,
+				6EFF006F2156A6EA00DD3DB6 /* FDMCommunityController.m */,
+				6EF667C82157E9E80014C261 /* FDMInterflowController.h */,
+				6EF667C92157E9E80014C261 /* FDMInterflowController.m */,
+				6EF667CB2157EA040014C261 /* FDMConfessionController.h */,
+				6EF667CC2157EA040014C261 /* FDMConfessionController.m */,
+				6EF667CE2157EA1C0014C261 /* FDMMarketController.h */,
+				6EF667CF2157EA1C0014C261 /* FDMMarketController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EFF004D21569F6A00DD3DB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EFF004E21569F6A00DD3DB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EFF004F21569F6A00DD3DB6 /* Favour(帮帮) */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF005021569F6A00DD3DB6 /* Controller */,
+				6EFF005121569F6A00DD3DB6 /* Model */,
+				6EFF005221569F6A00DD3DB6 /* View */,
+			);
+			path = "Favour(帮帮)";
+			sourceTree = "<group>";
+		};
+		6EFF005021569F6A00DD3DB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF00712156A6FD00DD3DB6 /* FDMFavourController.h */,
+				6EFF00722156A6FD00DD3DB6 /* FDMFavourController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EFF005121569F6A00DD3DB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EFF005221569F6A00DD3DB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EFF005321569F6A00DD3DB6 /* HomePage(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF005421569F6A00DD3DB6 /* Controller */,
+				6EFF005521569F6A00DD3DB6 /* Model */,
+				6EFF005621569F6A00DD3DB6 /* View */,
+			);
+			path = "HomePage(首页)";
+			sourceTree = "<group>";
+		};
+		6EFF005421569F6A00DD3DB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EF667C52157E00C0014C261 /* FDMHomePageController.h */,
+				6EF667C62157E00C0014C261 /* FDMHomePageController.m */,
+				6EF667AB2157AD7D0014C261 /* FDMFocusController.h */,
+				6EF667AC2157AD7D0014C261 /* FDMFocusController.m */,
+				55A9545D218C2F7200C48875 /* FDMFocusWebController.h */,
+				55A9545E218C2F7200C48875 /* FDMFocusWebController.m */,
+				6EF667AE2157AD930014C261 /* FDMVoiceController.h */,
+				6EF667AF2157AD930014C261 /* FDMVoiceController.m */,
+				55F3508821981F080098DA31 /* FDMArticleController.h */,
+				55F3508921981F080098DA31 /* FDMArticleController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EFF005521569F6A00DD3DB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				552E24B9218C245200B5D0E0 /* FDMCollectionModel.h */,
+				552E24BA218C245200B5D0E0 /* FDMCollectionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EFF005621569F6A00DD3DB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55B1129B2189994300C6105B /* FDMCollectionViewCell.h */,
+				55B1129C2189994300C6105B /* FDMCollectionViewCell.m */,
+				55B1129D2189994300C6105B /* FDMCollectionViewCell.xib */,
+				55F350832197E2270098DA31 /* FDMVoiceViewCell.h */,
+				55F350842197E2270098DA31 /* FDMVoiceViewCell.m */,
+				55F350852197E2270098DA31 /* FDMVoiceViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EFF005721569F6A00DD3DB6 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF005821569F6A00DD3DB6 /* Controller */,
+				6EFF005921569F6A00DD3DB6 /* Model */,
+				6EFF005A21569F6A00DD3DB6 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		6EFF005821569F6A00DD3DB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF00652156A12200DD3DB6 /* FDMTabBarController.h */,
+				6EFF00662156A12200DD3DB6 /* FDMTabBarController.m */,
+				6EFF00682156A18B00DD3DB6 /* FDMNavigationController.h */,
+				6EFF00692156A18B00DD3DB6 /* FDMNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EFF005921569F6A00DD3DB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EFF005A21569F6A00DD3DB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EFF005B21569F6A00DD3DB6 /* Other(其它) */ = {
+			isa = PBXGroup;
+			children = (
+				55B1128621897D5C00C6105B /* Category */,
+				6EF667A02157AAA40014C261 /* Farme(框架) */,
+				6EFF005E21569F6A00DD3DB6 /* main.m */,
+				6EFF005C21569F6A00DD3DB6 /* AppDelegate.h */,
+				6EFF005D21569F6A00DD3DB6 /* AppDelegate.m */,
+				6EF667D12157F29F0014C261 /* PalmTang.pch */,
+			);
+			path = "Other(其它)";
+			sourceTree = "<group>";
+		};
+		98927D458FCA0BE929FC61B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C02B2B01017D6E793E7697A6 /* Pods-PalmTang.debug.xcconfig */,
+				F5D22A91FB4DBA64BFCB4AE5 /* Pods-PalmTang.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AB7C1E7D0086ECDC07CF405 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0BF263D0DB1F265122A6E /* libPods-PalmTang.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +533,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EFF003F21569C1100DD3DB6 /* Build configuration list for PBXNativeTarget "PalmTang" */;
 			buildPhases = (
+				508D03436FECF284A9580F80 /* [CP] Check Pods Manifest.lock */,
 				6EFF002521569C1100DD3DB6 /* Sources */,
 				6EFF002621569C1100DD3DB6 /* Frameworks */,
 				6EFF002721569C1100DD3DB6 /* Resources */,
+				360DCCEBF5E26208635FCDE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,7 +554,8 @@
 		6EFF002121569C1100DD3DB6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				CLASSPREFIX = FDM;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = fdm;
 				TargetAttributes = {
 					6EFF002821569C1100DD3DB6 = {
@@ -129,36 +587,116 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550B98472191447900489123 /* FDMModifyController.storyboard in Resources */,
+				55F350872197E2270098DA31 /* FDMVoiceViewCell.xib in Resources */,
+				55B1129F2189994300C6105B /* FDMCollectionViewCell.xib in Resources */,
+				55005CE7218AAC5600AAE33A /* FDMRegisterLoginView.xib in Resources */,
 				6EFF003921569C1100DD3DB6 /* LaunchScreen.storyboard in Resources */,
 				6EFF003621569C1100DD3DB6 /* Assets.xcassets in Resources */,
-				6EFF003421569C1100DD3DB6 /* Main.storyboard in Resources */,
+				55150E472192832C00B6D627 /* FDMSexSelectionView.xib in Resources */,
+				5520E1BF21882AD9008367EC /* FDMTableHeaderView.xib in Resources */,
+				55AF3B0C219439660054CBEE /* FDMSettingController.storyboard in Resources */,
+				5520E1C6218840CD008367EC /* FDMList.plist in Resources */,
+				5520E1C421883DA1008367EC /* FDMMeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		360DCCEBF5E26208635FCDE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PalmTang/Pods-PalmTang-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PalmTang/Pods-PalmTang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		508D03436FECF284A9580F80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PalmTang-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EFF002521569C1100DD3DB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EFF003121569C1100DD3DB6 /* ViewController.m in Sources */,
-				6EFF003C21569C1100DD3DB6 /* main.m in Sources */,
-				6EFF002E21569C1100DD3DB6 /* AppDelegate.m in Sources */,
+				6EF6679F2157A1100014C261 /* FDMMeController.m in Sources */,
+				552E24B8218C174A00B5D0E0 /* FDMTableHeaderModel.m in Sources */,
+				6EF667C12157B5510014C261 /* DCPagerController.m in Sources */,
+				6EF667AD2157AD7D0014C261 /* FDMFocusController.m in Sources */,
+				6EFF006421569F6A00DD3DB6 /* main.m in Sources */,
+				550B98442191441800489123 /* FDMModifyController.m in Sources */,
+				55B1128F2189809A00C6105B /* NSDictionary+FDMLog.m in Sources */,
+				6EFF00732156A6FD00DD3DB6 /* FDMFavourController.m in Sources */,
+				5520E1C321883DA1008367EC /* FDMMeTableViewCell.m in Sources */,
+				6EF667C42157B5510014C261 /* DCPagerProgressView.m in Sources */,
+				55AF3B0A2194394D0054CBEE /* FDMSettingController.m in Sources */,
+				6EF667CD2157EA040014C261 /* FDMConfessionController.m in Sources */,
+				55005CE5218AAC4200AAE33A /* FDMRegisterLoginView.m in Sources */,
+				6EF667D02157EA1C0014C261 /* FDMMarketController.m in Sources */,
+				6EF667CA2157E9E80014C261 /* FDMInterflowController.m in Sources */,
+				552E24B5218BEEB700B5D0E0 /* FDMUserModel.m in Sources */,
+				552E24BB218C245200B5D0E0 /* FDMCollectionModel.m in Sources */,
+				6EF667B02157AD930014C261 /* FDMVoiceController.m in Sources */,
+				6EFF00672156A12200DD3DB6 /* FDMTabBarController.m in Sources */,
+				6EF667C32157B5510014C261 /* DCPagerConsts.m in Sources */,
+				5520E1C921884979008367EC /* FDMMeListModel.m in Sources */,
+				6EFF00702156A6EA00DD3DB6 /* FDMCommunityController.m in Sources */,
+				55F3508A21981F080098DA31 /* FDMArticleController.m in Sources */,
+				55F350862197E2270098DA31 /* FDMVoiceViewCell.m in Sources */,
+				55F55CBD21957245001F529C /* FDMListPicModel.m in Sources */,
+				55B1129E2189994300C6105B /* FDMCollectionViewCell.m in Sources */,
+				55150E452192831400B6D627 /* FDMSexSelectionView.m in Sources */,
+				6EFF006321569F6A00DD3DB6 /* AppDelegate.m in Sources */,
+				55005CDD218A8FF400AAE33A /* FDMRegisterLoginController.m in Sources */,
+				6EF667C22157B5510014C261 /* UIView+DCPagerFrame.m in Sources */,
+				6EFF006A2156A18B00DD3DB6 /* FDMNavigationController.m in Sources */,
+				5520E1BD218829F5008367EC /* FDMTableHeaderView.m in Sources */,
+				6EF667C72157E00C0014C261 /* FDMHomePageController.m in Sources */,
+				55A9545F218C2F7200C48875 /* FDMFocusWebController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6EFF003221569C1100DD3DB6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EFF003321569C1100DD3DB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6EFF003721569C1100DD3DB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -184,6 +722,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -191,6 +730,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -218,7 +758,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -239,6 +779,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -246,6 +787,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -267,7 +809,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -276,29 +818,39 @@
 		};
 		6EFF004021569C1100DD3DB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02B2B01017D6E793E7697A6 /* Pods-PalmTang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89PGNZ69L5;
+				DEVELOPMENT_TEAM = 494CM2XCYA;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PalmTang/Classes/Other(其它)/PalmTang.pch";
 				INFOPLIST_FILE = PalmTang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdm.PalmTang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6EFF004121569C1100DD3DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D22A91FB4DBA64BFCB4AE5 /* Pods-PalmTang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89PGNZ69L5;
+				DEVELOPMENT_TEAM = 494CM2XCYA;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PalmTang/Classes/Other(其它)/PalmTang.pch";
 				INFOPLIST_FILE = PalmTang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdm.PalmTang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

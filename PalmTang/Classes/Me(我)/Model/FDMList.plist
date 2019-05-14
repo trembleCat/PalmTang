@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>meList</key>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>text</key>
+			<string>校园树洞</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>text</key>
+			<string>校历查询</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>text</key>
+			<string>成绩查询</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>text</key>
+			<string>校园地图</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>text</key>
+			<string>校园全景</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string></string>
+			<key>text</key>
+			<string>我是新生</string>
+		</dict>
+	</array>
+</dict>
+</plist>

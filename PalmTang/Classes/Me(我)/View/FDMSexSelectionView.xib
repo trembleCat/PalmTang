@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDMSexSelectionView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODu-5b-gKd" userLabel="男按钮">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="T7b-ua-9xc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mob-7U-jRA" userLabel="女按钮">
+                    <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="JUt-JA-Q9k"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="ITD-hu-KNn" userLabel="男选项">
+                    <rect key="frame" x="25" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="0YW-OB-fCe"/>
+                        <constraint firstAttribute="width" constant="20" id="F93-Km-Sv8"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_manIcon" translatesAutoresizingMaskIntoConstraints="NO" id="DXG-9p-WOl" userLabel="男">
+                    <rect key="frame" x="55" y="15" width="20" height="20"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_womanIcon" translatesAutoresizingMaskIntoConstraints="NO" id="tQz-iH-0js" userLabel="女">
+                    <rect key="frame" x="155" y="15" width="20" height="20"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="xgD-cC-g3F" userLabel="女选项">
+                    <rect key="frame" x="125" y="15" width="20" height="20"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DXG-9p-WOl" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="1o2-Ap-VLV"/>
+                <constraint firstItem="xgD-cC-g3F" firstAttribute="height" secondItem="ITD-hu-KNn" secondAttribute="height" id="8a7-eR-lTm"/>
+                <constraint firstItem="Mob-7U-jRA" firstAttribute="leading" secondItem="ODu-5b-gKd" secondAttribute="trailing" id="9ls-0J-N6j"/>
+                <constraint firstItem="tQz-iH-0js" firstAttribute="leading" secondItem="xgD-cC-g3F" secondAttribute="trailing" constant="10" id="BGu-bm-0Hm"/>
+                <constraint firstItem="DXG-9p-WOl" firstAttribute="leading" secondItem="ITD-hu-KNn" secondAttribute="trailing" constant="10" id="Bbz-4u-LuY"/>
+                <constraint firstItem="xgD-cC-g3F" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Dxh-PH-eVe"/>
+                <constraint firstItem="tQz-iH-0js" firstAttribute="height" secondItem="ITD-hu-KNn" secondAttribute="height" id="I6K-ON-bQ6"/>
+                <constraint firstItem="ITD-hu-KNn" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Knv-J0-6sR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mob-7U-jRA" secondAttribute="trailing" id="Miy-eo-KhE"/>
+                <constraint firstItem="xgD-cC-g3F" firstAttribute="width" secondItem="ITD-hu-KNn" secondAttribute="width" id="OJi-3t-7wz"/>
+                <constraint firstItem="Mob-7U-jRA" firstAttribute="leading" secondItem="ODu-5b-gKd" secondAttribute="trailing" id="QWV-sI-mdK"/>
+                <constraint firstItem="ODu-5b-gKd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Rm5-J6-AcG"/>
+                <constraint firstItem="tQz-iH-0js" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="XY6-bX-yfJ"/>
+                <constraint firstItem="DXG-9p-WOl" firstAttribute="width" secondItem="ITD-hu-KNn" secondAttribute="width" id="fdc-4V-gVx"/>
+                <constraint firstItem="ODu-5b-gKd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jer-Sj-EOy"/>
+                <constraint firstItem="DXG-9p-WOl" firstAttribute="height" secondItem="ITD-hu-KNn" secondAttribute="height" id="ktS-Ps-jRa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ODu-5b-gKd" secondAttribute="bottom" id="lHa-jM-HzU"/>
+                <constraint firstItem="Mob-7U-jRA" firstAttribute="width" secondItem="ODu-5b-gKd" secondAttribute="width" id="lzM-jE-U5Y"/>
+                <constraint firstItem="ITD-hu-KNn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="ntf-FQ-yGd"/>
+                <constraint firstItem="xgD-cC-g3F" firstAttribute="leading" secondItem="ODu-5b-gKd" secondAttribute="trailing" constant="25" id="rs8-lU-7I7"/>
+                <constraint firstItem="tQz-iH-0js" firstAttribute="width" secondItem="ITD-hu-KNn" secondAttribute="width" id="tjh-i2-Gwx"/>
+                <constraint firstItem="Mob-7U-jRA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vcS-iX-Hlz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Mob-7U-jRA" secondAttribute="bottom" id="vn8-UL-Duk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="manBtn" destination="ODu-5b-gKd" id="q2z-1t-RLD"/>
+                <outlet property="manImage" destination="ITD-hu-KNn" id="3qs-8B-nb6"/>
+                <outlet property="womanBtn" destination="Mob-7U-jRA" id="bJo-jt-fN5"/>
+                <outlet property="womanImage" destination="xgD-cC-g3F" id="Lne-SH-cS2"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="200"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Profile_manIcon" width="13" height="13"/>
+        <image name="Profile_womanIcon" width="13" height="13"/>
+        <image name="Unchecked" width="100" height="100"/>
+    </resources>
+</document>

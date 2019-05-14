@@ -1,0 +1,50 @@
+//
+//  PaimTang.pch
+//  PalmTang
+//
+//  Created by 发抖的喵 on 2018/9/24.
+//  Copyright © 2018年 fdm. All rights reserved.
+//
+
+#ifndef PaimTang_pch
+#define PaimTang_pch
+
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import <MJRefresh/MJRefresh.h>
+
+//47.94.12.137 - 192.168.1.107
+#define Url @"http://47.94.12.137:8080/tsxyService" //根目录
+#define newUrl @"http://47.94.12.137:8080/tsxyService/news" //首页热点新闻
+#define loginUrl @"http://47.94.12.137:8080/tsxyService/login"  //登录
+#define modify @"http://47.94.12.137:8080/tsxyService/updatelogin"  //修改信息
+#define upload @"http://47.94.12.137:8080/tsxyService/upload"   //上传
+#define listpic @"http://47.94.12.137:8080/tsxyService/listpic" //下载
+
+//获取状态栏frame
+#define statusBarFrame [[UIApplication sharedApplication]statusBarFrame]
+
+//屏幕宽度和高度
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+
+//标签栏的高度
+#define screenTabBarH self.tabBarController.tabBar.frame.size.height
+//导航栏的高度
+#define screenNavH self.navigationController.navigationBar.frame.size.height
+
+/**控制台输出完整**/
+#ifdef DEBUG
+
+#define NSLog(FORMAT, ...) fprintf(stderr, "%s:%zd\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+
+#else
+
+#define NSLog(FORMAT, ...) nil
+
+#endif
+/**控制台输出完整**/
+
+#endif /* PaimTang_pch */
