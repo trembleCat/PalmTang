@@ -10,7 +10,7 @@
 
 @interface FDMNavigationController ()<UIGestureRecognizerDelegate>
 
-//123123
+
 @end
 
 @implementation FDMNavigationController
