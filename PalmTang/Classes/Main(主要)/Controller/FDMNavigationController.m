@@ -10,7 +10,7 @@
 
 @interface FDMNavigationController ()<UIGestureRecognizerDelegate>
 
-//测设测试测试
+
 @end
 
 @implementation FDMNavigationController
